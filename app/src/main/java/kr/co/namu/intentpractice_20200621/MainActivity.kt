@@ -39,7 +39,9 @@ class MainActivity : AppCompatActivity() {
 
         setNickNameBtn.setOnClickListener {
             val myIntent = Intent(this, EditNickNameActivity::class.java)
-            startActivity(myIntent)
+//            결과를 가지러 가는 이동은 startActivityForResult로 가야한다
+//            이런 방식의 이동은 어떤 결과(닉네임, 비밀번호)를 가지러 가는지 숫자로 구별해야 한다 Ex. 1000번
+            startActivityForResult(myIntent, 1000)
         }
     }
 }
