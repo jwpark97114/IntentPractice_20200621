@@ -36,5 +36,10 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("message", inputMessage)
             startActivity(myIntent)
         }
+
+        setNickNameBtn.setOnClickListener {
+            val myIntent = Intent(this, EditNickNameActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
