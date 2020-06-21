@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
 //            화면이동 코드부터 작성
             val myIntent = Intent(this, ThirdActivity::class.java)
+//            인텐트에 추가 데이터를 첨부; 이름표/ 실제값 쌍으로 첨부.
+            myIntent.putExtra("message", inputMessage)
             startActivity(myIntent)
         }
     }
