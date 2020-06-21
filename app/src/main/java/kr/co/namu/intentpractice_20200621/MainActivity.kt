@@ -16,5 +16,12 @@ class MainActivity : AppCompatActivity() {
 //            실제로 인텐트 사용(비행기 탑승 or 출발)
             startActivity(myIntent)
         }
+
+        secondActivityBtn.setOnClickListener {
+            val myIntent = Intent(this, SecondActivity::class.java)
+            startActivity(myIntent)
+//            ctrl alt L (윈도우) Cmd option L (맥)  => 들여쓰기 자동 정리
+
+        }
     }
 }

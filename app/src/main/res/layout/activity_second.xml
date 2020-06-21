@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
     android:gravity="center"
-    tools:context=".MainActivity">
+    android:padding="15dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="두번째 액티비티"
+        android:textSize="25sp"/>
 
     <Button
-        android:id="@+id/firstActivityBtn"
+        android:id="@+id/secondActivityCloseBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다른화면으로 이동하기"/>
-
-    <Button
-        android:id="@+id/secondActivityBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="두번째 화면으로 이동"
+        android:text="액티비티 닫기"
         />
-
-
-
 
 
 
