@@ -24,14 +24,14 @@
         />
 
     <EditText
-        android:id="@+id/"
+        android:id="@+id/messageEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="전달할 내용 입력"
         android:singleLine="true"/>
 
     <Button
-        android:id="@+id/"
+        android:id="@+id/goToThirdBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="세번째 화면으로 내용 전달"/>

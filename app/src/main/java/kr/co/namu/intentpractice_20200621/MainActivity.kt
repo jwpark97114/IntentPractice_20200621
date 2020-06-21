@@ -23,5 +23,16 @@ class MainActivity : AppCompatActivity() {
 //            ctrl alt L (윈도우) Cmd option L (맥)  => 들여쓰기 자동 정리
 
         }
+
+        goToThirdBtn.setOnClickListener {
+//            1.적혀있는 메세지를 받아서 => 2. 화면이동시 전달
+
+//            메세지 내용을 변수에 저장
+            val inputMessage = messageEdt.text.toString()
+
+//            화면이동 코드부터 작성
+            val myIntent = Intent(this, ThirdActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
