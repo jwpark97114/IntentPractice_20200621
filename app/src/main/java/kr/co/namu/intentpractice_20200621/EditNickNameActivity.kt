@@ -31,4 +31,5 @@ class EditNickNameActivity : AppCompatActivity() {
             finish()
         }
     }
+
 }
